@@ -1,0 +1,39 @@
+// ----- Colors -----
+
+// Primary
+$aqua: hsl(192, 90%, 77%);
+$cyan: hsl(192, 37%, 48%);
+$darkBlue: hsl(240, 21%, 20%);
+$grey: hsl(240, 10%, 57%);
+$purple: hsl(268, 34%, 53%);
+$violet: hsl(268, 100%, 86%);
+
+// Neutral
+$black: hsl(0, 0%, 0%);
+$lightGrey: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+
+// ----- Typography -----
+
+// Font Family
+$fontPrimary: 'Red Hat Display', sans-serif;
+
+// Font Size
+$display-sm: 2.5rem;
+$display-md: 3rem;
+$display-lg: 4rem;
+$title-sm: 2rem;
+$title-lg: 2.5rem;
+$overline: 1rem;
+$body-sm: 1rem;
+$body-lg: 1.125rem;
+$btn: 1rem;
+
+// Font Weight
+$fw-black: 900;
+$fw-medium: 500;
+
+// ----- Breakpoints -----
+
+$tablet: 40em; // 640px
+$desktop: 64em; // 1024px
