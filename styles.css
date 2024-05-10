@@ -93,6 +93,9 @@ body header {
 body header img {
   margin: 0 auto;
 }
+body .hero {
+  overflow: hidden;
+}
 body .hero .tablet {
   height: auto;
   width: 110.4vw;
@@ -144,7 +147,8 @@ body .hero .heroContent .btns {
   justify-content: center;
   gap: 1rem;
 }
-body .mainContent {
+body .mainContent,
+body footer {
   position: relative;
   padding-top: 5.25rem;
 }
@@ -187,6 +191,55 @@ body .mainContent article p {
   line-height: 1.625;
   color: hsl(240, 10%, 57%);
 }
+body footer {
+  position: relative;
+}
+body footer .footerContent {
+  position: relative;
+  margin-top: 1.75rem;
+  padding: 5.75rem 1.5rem 4.5rem;
+  text-align: center;
+}
+body footer .footerContent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(192, 37%, 48%);
+  opacity: 0.9;
+  z-index: -1;
+}
+body footer .footerContent picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+body footer .footerContent img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+body footer .footerContent h4 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.125;
+  color: hsl(0, 0%, 98%);
+}
+body footer .footerContent p {
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.444;
+  color: hsl(0, 0%, 98%);
+}
 
 .primaryBtn {
   padding: 1rem 2.5rem;
@@ -216,6 +269,9 @@ body .mainContent article p {
   line-height: 1.625;
   color: hsl(0, 0%, 100%);
 }
+.secondaryBtn > span {
+  color: hsl(268, 100%, 86%);
+}
 .secondaryBtn:hover {
   background-color: hsl(268, 55%, 71%);
 }
@@ -230,8 +286,10 @@ body .mainContent article p {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: hsl(0, 0%, 98%);
   border: 1px solid hsla(240, 10%, 57%, 0.25);
   border-radius: 29px;
+  z-index: 1;
 }
 .sectionNumber p {
   font-size: 1rem;
@@ -247,4 +305,5 @@ body .mainContent article p {
   width: 1px;
   transform: translateX(-50%);
   background-color: hsla(240, 10%, 57%, 0.25);
+  z-index: 1;
 }/*# sourceMappingURL=styles.css.map */
