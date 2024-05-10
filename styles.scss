@@ -1,1 +1,17 @@
 @use './styles/' as *;
+
+body {
+	background-color: $lightGrey;
+	font-family: $fontPrimary;
+	font-optical-sizing: auto;
+	font-style: normal;
+
+	header {
+		padding: 3rem 0 3.375rem;
+
+		// logo
+		img {
+			margin: 0 auto;
+		}
+	}
+}
