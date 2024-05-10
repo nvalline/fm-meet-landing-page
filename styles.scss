@@ -1,7 +1,7 @@
 @use './styles/' as *;
 
 body {
-	background-color: $lightGrey;
+	background-color: $offWhite;
 	font-family: $fontPrimary;
 	font-optical-sizing: auto;
 	font-style: normal;
@@ -71,6 +71,57 @@ body {
 			}
 		}
 	}
+
+	// Main Content Section
+	.mainContent {
+		position: relative;
+		padding-top: 5.25rem;
+
+		.gallery {
+			margin-top: 5.75rem;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			gap: 1.5rem;
+
+			img {
+				height: auto;
+				width: 151px;
+				border-radius: 8px;
+			}
+		}
+
+		article {
+			padding: 4rem 1.5rem;
+			text-align: center;
+
+			h3 {
+				margin-bottom: 1.5rem;
+				font-size: $overline;
+				font-weight: $fw-black;
+				letter-spacing: 4px;
+				line-height: 1.625;
+				color: $cyan;
+				text-transform: uppercase;
+			}
+
+			h2 {
+				margin-bottom: 2rem;
+				font-size: $title-sm;
+				font-weight: $fw-black;
+				line-height: 1.125;
+				color: $darkBlue;
+			}
+
+			p {
+				font-size: $body-sm;
+				font-weight: $fw-medium;
+				line-height: 1.625;
+				color: $grey;
+			}
+		}
+	}
 }
 
 // Buttons
@@ -106,5 +157,37 @@ body {
 
 	&:hover {
 		background-color: $hoverPurple;
+	}
+}
+
+// Section Numbers
+.sectionNumber {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0 auto 4rem;
+	height: 56px;
+	width: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid $lightGrey;
+	border-radius: 29px;
+
+	p {
+		font-size: $body-sm;
+		font-weight: $fw-black;
+		line-height: 1.625;
+		color: $grey;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: -5.25rem;
+		height: 84px;
+		width: 1px;
+		transform: translateX(-50%);
+		background-color: $lightGrey;
 	}
 }
