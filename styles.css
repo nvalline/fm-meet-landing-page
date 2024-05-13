@@ -95,6 +95,11 @@ body header {
     padding: 3rem 0 4rem;
   }
 }
+@media (min-width: 64em) {
+  body header {
+    padding: 5rem 0 3.8125rem;
+  }
+}
 body header img {
   margin: 0 auto;
 }
@@ -129,6 +134,32 @@ body .hero .desktop {
     display: block;
   }
 }
+@media (min-width: 64em) {
+  body .hero .heroWrapper {
+    width: 104.4vw;
+    max-width: 1504px;
+    margin-left: -2.2vw;
+    margin-right: -2.2vw;
+    display: flex;
+    justify-content: center;
+    gap: 5.5rem;
+  }
+}
+@media (min-width: 94em) {
+  body .hero .heroWrapper {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 64em) {
+  body .hero .heroWrapper .imgLeft {
+    align-self: flex-start;
+  }
+}
+@media (min-width: 64em) {
+  body .hero .heroWrapper .imgRight {
+    align-self: flex-end;
+  }
+}
 body .hero .heroContent {
   margin: 0 auto;
   padding: 3rem 1.5rem 4rem;
@@ -145,6 +176,12 @@ body .hero .heroContent {
     max-width: 457px;
   }
 }
+@media (min-width: 64em) {
+  body .hero .heroContent {
+    padding: 2.9375rem 0 0.4375rem;
+    max-width: 540px;
+  }
+}
 body .hero .heroContent h1 {
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
@@ -156,6 +193,12 @@ body .hero .heroContent h1 {
   body .hero .heroContent h1 {
     font-size: 3rem;
     line-height: 1;
+  }
+}
+@media (min-width: 64em) {
+  body .hero .heroContent h1 {
+    margin-bottom: 2.125rem;
+    font-size: 4rem;
   }
 }
 body .hero .heroContent p {
@@ -182,6 +225,11 @@ body footer {
   position: relative;
   padding-top: 5.25rem;
 }
+@media (min-width: 64em) {
+  body .mainContent {
+    margin-top: 6.875rem;
+  }
+}
 body .mainContent .gallery {
   margin-top: 7.5rem;
   display: flex;
@@ -195,6 +243,11 @@ body .mainContent .gallery {
     gap: 0.6875rem;
   }
 }
+@media (min-width: 64em) {
+  body .mainContent .gallery {
+    gap: 1.875rem;
+  }
+}
 body .mainContent .gallery img {
   height: auto;
   width: 151px;
@@ -203,6 +256,11 @@ body .mainContent .gallery img {
 @media (min-width: 40em) {
   body .mainContent .gallery img {
     width: 164px;
+  }
+}
+@media (min-width: 64em) {
+  body .mainContent .gallery img {
+    width: 255px;
   }
 }
 body .mainContent article {
@@ -214,6 +272,12 @@ body .mainContent article {
   body .mainContent article {
     padding: 3rem 0 5rem;
     max-width: 573px;
+  }
+}
+@media (min-width: 64em) {
+  body .mainContent article {
+    padding: 4.75rem 0;
+    max-width: 540px;
   }
 }
 body .mainContent article h3 {
@@ -259,11 +323,15 @@ body footer .footerContent {
   position: relative;
   margin-top: 1.75rem;
   padding: 5.75rem 1.5rem 4.5rem;
-  text-align: center;
 }
 @media (min-width: 40em) {
   body footer .footerContent {
     padding: 5.75rem 1.5rem 4.125rem;
+  }
+}
+@media (min-width: 64em) {
+  body footer .footerContent {
+    padding: 7.25rem 1.5rem 6.5rem;
   }
 }
 body footer .footerContent::before {
@@ -292,6 +360,20 @@ body footer .footerContent img {
      object-fit: cover;
   z-index: -1;
 }
+body footer .footerContent .contentWrapper {
+  text-align: center;
+}
+@media (min-width: 64em) {
+  body footer .footerContent .contentWrapper {
+    margin: 0 auto;
+    max-width: 1110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    text-align: left;
+  }
+}
 body footer .footerContent h4 {
   margin-bottom: 1.5rem;
   font-size: 2rem;
@@ -308,6 +390,12 @@ body footer .footerContent h4 {
     text-wrap: unset;
   }
 }
+@media (min-width: 64em) {
+  body footer .footerContent h4 {
+    margin: 0;
+    width: 350px;
+  }
+}
 body footer .footerContent p {
   margin-bottom: 2rem;
   font-size: 1.125rem;
@@ -319,6 +407,12 @@ body footer .footerContent p {
   body footer .footerContent p {
     margin: 0 auto 2.5rem;
     max-width: 573px;
+  }
+}
+@media (min-width: 64em) {
+  body footer .footerContent p {
+    margin: 0;
+    width: 350px;
   }
 }
 body footer .footerContent button {
@@ -335,6 +429,8 @@ body footer .footerContent button {
   font-weight: 900;
   line-height: 1.625;
   color: hsl(0, 0%, 100%);
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
 }
 .primaryBtn > span {
   margin-left: 0.25rem;
@@ -354,6 +450,8 @@ body footer .footerContent button {
   font-weight: 900;
   line-height: 1.625;
   color: hsl(0, 0%, 100%);
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
 }
 .secondaryBtn > span {
   color: hsl(268, 100%, 86%);
