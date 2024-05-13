@@ -90,6 +90,11 @@ body {
 body header {
   padding: 3rem 0 3.375rem;
 }
+@media (min-width: 40em) {
+  body header {
+    padding: 3rem 0 4rem;
+  }
+}
 body header img {
   margin: 0 auto;
 }
@@ -103,6 +108,13 @@ body .hero .tablet {
   margin-right: -5.2vw;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (min-width: 40em) {
+  body .hero .tablet {
+    width: 106.8vw;
+    margin-left: -3.4vw;
+    margin-right: -3.4vw;
+  }
 }
 @media (min-width: 64em) {
   body .hero .tablet {
@@ -118,6 +130,7 @@ body .hero .desktop {
   }
 }
 body .hero .heroContent {
+  margin: 0 auto;
   padding: 3rem 1.5rem 4rem;
   width: 100%;
   display: flex;
@@ -126,12 +139,24 @@ body .hero .heroContent {
   justify-content: center;
   text-align: center;
 }
+@media (min-width: 40em) {
+  body .hero .heroContent {
+    padding: 4.5rem 0 5rem;
+    max-width: 457px;
+  }
+}
 body .hero .heroContent h1 {
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
   font-weight: 900;
   line-height: 1.1;
   color: hsl(240, 21%, 20%);
+}
+@media (min-width: 40em) {
+  body .hero .heroContent h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 body .hero .heroContent p {
   margin-bottom: 2rem;
@@ -147,27 +172,49 @@ body .hero .heroContent .btns {
   justify-content: center;
   gap: 1rem;
 }
+@media (min-width: 40em) {
+  body .hero .heroContent .btns {
+    flex-direction: row;
+  }
+}
 body .mainContent,
 body footer {
   position: relative;
   padding-top: 5.25rem;
 }
 body .mainContent .gallery {
-  margin-top: 5.75rem;
+  margin-top: 7.5rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
 }
+@media (min-width: 40em) {
+  body .mainContent .gallery {
+    gap: 0.6875rem;
+  }
+}
 body .mainContent .gallery img {
   height: auto;
   width: 151px;
   border-radius: 8px;
 }
+@media (min-width: 40em) {
+  body .mainContent .gallery img {
+    width: 164px;
+  }
+}
 body .mainContent article {
+  margin: 0 auto;
   padding: 4rem 1.5rem;
   text-align: center;
+}
+@media (min-width: 40em) {
+  body .mainContent article {
+    padding: 3rem 0 5rem;
+    max-width: 573px;
+  }
 }
 body .mainContent article h3 {
   margin-bottom: 1.5rem;
@@ -178,12 +225,26 @@ body .mainContent article h3 {
   color: hsl(192, 37%, 48%);
   text-transform: uppercase;
 }
+@media (min-width: 40em) {
+  body .mainContent article h3 {
+    margin-bottom: 1rem;
+  }
+}
 body .mainContent article h2 {
   margin-bottom: 2rem;
   font-size: 2rem;
   font-weight: 900;
   line-height: 1.125;
   color: hsl(240, 21%, 20%);
+}
+@media (min-width: 40em) {
+  body .mainContent article h2 {
+    margin: 0 auto 2rem;
+    max-width: 445px;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    text-wrap: unset;
+  }
 }
 body .mainContent article p {
   font-size: 1rem;
@@ -199,6 +260,11 @@ body footer .footerContent {
   margin-top: 1.75rem;
   padding: 5.75rem 1.5rem 4.5rem;
   text-align: center;
+}
+@media (min-width: 40em) {
+  body footer .footerContent {
+    padding: 5.75rem 1.5rem 4.125rem;
+  }
 }
 body footer .footerContent::before {
   content: "";
@@ -233,6 +299,15 @@ body footer .footerContent h4 {
   line-height: 1.125;
   color: hsl(0, 0%, 98%);
 }
+@media (min-width: 40em) {
+  body footer .footerContent h4 {
+    margin: 0 auto 2rem;
+    max-width: 457px;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    text-wrap: unset;
+  }
+}
 body footer .footerContent p {
   margin-bottom: 2rem;
   font-size: 1.125rem;
@@ -240,9 +315,19 @@ body footer .footerContent p {
   line-height: 1.444;
   color: hsl(0, 0%, 98%);
 }
+@media (min-width: 40em) {
+  body footer .footerContent p {
+    margin: 0 auto 2.5rem;
+    max-width: 573px;
+  }
+}
+body footer .footerContent button {
+  width: 193px;
+}
 
 .primaryBtn {
   padding: 1rem 2.5rem;
+  width: 193px;
   border: none;
   border-radius: 29px;
   background-color: hsl(192, 37%, 48%);
@@ -261,6 +346,7 @@ body footer .footerContent p {
 
 .secondaryBtn {
   padding: 1rem 1.8125rem;
+  width: 139px;
   border: none;
   border-radius: 29px;
   background-color: hsl(268, 34%, 53%);
@@ -280,7 +366,6 @@ body footer .footerContent p {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  margin: 0 auto 4rem;
   height: 56px;
   width: 56px;
   display: flex;

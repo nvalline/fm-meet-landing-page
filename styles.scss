@@ -9,6 +9,10 @@ body {
 	header {
 		padding: 3rem 0 3.375rem;
 
+		@media (min-width: $tablet) {
+			padding: 3rem 0 4rem;
+		}
+
 		// logo
 		img {
 			margin: 0 auto;
@@ -26,6 +30,12 @@ body {
 			margin-right: -5.2vw;
 			object-fit: cover;
 
+			@media (min-width: $tablet) {
+				width: 106.8vw;
+				margin-left: -3.4vw;
+				margin-right: -3.4vw;
+			}
+
 			@media (min-width: $desktop) {
 				display: none;
 			}
@@ -40,6 +50,7 @@ body {
 		}
 
 		.heroContent {
+			margin: 0 auto;
 			padding: 3rem 1.5rem 4rem;
 			width: 100%;
 			display: flex;
@@ -48,12 +59,22 @@ body {
 			justify-content: center;
 			text-align: center;
 
+			@media (min-width: $tablet) {
+				padding: 4.5rem 0 5rem;
+				max-width: 457px;
+			}
+
 			h1 {
 				margin-bottom: 1.5rem;
 				font-size: $display-sm;
 				font-weight: $fw-black;
 				line-height: 1.1;
 				color: $darkBlue;
+
+				@media (min-width: $tablet) {
+					font-size: $display-md;
+					line-height: 1;
+				}
 			}
 
 			p {
@@ -70,6 +91,10 @@ body {
 				align-items: center;
 				justify-content: center;
 				gap: 1rem;
+
+				@media (min-width: $tablet) {
+					flex-direction: row;
+				}
 			}
 		}
 	}
@@ -83,23 +108,37 @@ body {
 	// Main Content Section
 	.mainContent {
 		.gallery {
-			margin-top: 5.75rem;
+			margin-top: 7.5rem;
 			display: flex;
 			flex-wrap: wrap;
 			align-items: center;
 			justify-content: center;
 			gap: 1.5rem;
 
+			@media (min-width: $tablet) {
+				gap: 0.6875rem;
+			}
+
 			img {
 				height: auto;
 				width: 151px;
 				border-radius: 8px;
+
+				@media (min-width: $tablet) {
+					width: 164px;
+				}
 			}
 		}
 
 		article {
+			margin: 0 auto;
 			padding: 4rem 1.5rem;
 			text-align: center;
+
+			@media (min-width: $tablet) {
+				padding: 3rem 0 5rem;
+				max-width: 573px;
+			}
 
 			h3 {
 				margin-bottom: 1.5rem;
@@ -109,6 +148,10 @@ body {
 				line-height: 1.625;
 				color: $cyan;
 				text-transform: uppercase;
+
+				@media (min-width: $tablet) {
+					margin-bottom: 1rem;
+				}
 			}
 
 			h2 {
@@ -117,6 +160,14 @@ body {
 				font-weight: $fw-black;
 				line-height: 1.125;
 				color: $darkBlue;
+
+				@media (min-width: $tablet) {
+					margin: 0 auto 2rem;
+					max-width: 445px;
+					font-size: $title-lg;
+					line-height: 1.1;
+					text-wrap: unset;
+				}
 			}
 
 			p {
@@ -136,6 +187,10 @@ body {
 			margin-top: 1.75rem;
 			padding: 5.75rem 1.5rem 4.5rem;
 			text-align: center;
+
+			@media (min-width: $tablet) {
+				padding: 5.75rem 1.5rem 4.125rem;
+			}
 
 			&::before {
 				content: '';
@@ -171,6 +226,14 @@ body {
 				font-weight: $fw-black;
 				line-height: 1.125;
 				color: $offWhite;
+
+				@media (min-width: $tablet) {
+					margin: 0 auto 2rem;
+					max-width: 457px;
+					font-size: $title-lg;
+					line-height: 1.1;
+					text-wrap: unset;
+				}
 			}
 
 			p {
@@ -179,6 +242,15 @@ body {
 				font-weight: $fw-medium;
 				line-height: 1.444;
 				color: $offWhite;
+
+				@media (min-width: $tablet) {
+					margin: 0 auto 2.5rem;
+					max-width: 573px;
+				}
+			}
+
+			button {
+				width: 193px;
 			}
 		}
 	}
@@ -187,6 +259,7 @@ body {
 // Buttons
 .primaryBtn {
 	padding: 1rem 2.5rem;
+	width: 193px;
 	border: none;
 	border-radius: 29px;
 	background-color: $cyan;
@@ -207,6 +280,7 @@ body {
 
 .secondaryBtn {
 	padding: 1rem 1.8125rem;
+	width: 139px;
 	border: none;
 	border-radius: 29px;
 	background-color: $purple;
@@ -229,7 +303,6 @@ body {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	margin: 0 auto 4rem;
 	height: 56px;
 	width: 56px;
 	display: flex;
