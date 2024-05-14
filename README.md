@@ -26,11 +26,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/screenshot.png)
+![Finished Meet Landing Page Screenshot](./design/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Here](https://www.frontendmentor.io/solutions/meet-w-flexbox-and-sass-V-M3tU65FA)
 - Live Site URL: [Here](https://nv-meet-landing-page.netlify.app/)
 
 ## My process
@@ -45,7 +45,11 @@ Users should be able to:
 
 ### What I learned
 
+In this challenge I learned more about using HTML's 'picture' element, the CSS unit 'vw', and also using the ::before psuedo-selector. I have not used either very much in previous projects.
+
 ### Continued development
+
+I am enjoying learning new aspects that continue to expand my frontend skills.
 
 ## Author
 
@@ -55,4 +59,4 @@ Users should be able to:
 
 ## Acknowledgments
 
-Gabriel Tertulino's question in the Help channel of Discord helped me figure out the solution to the card layout using CSS Grid.
+[Jasoneczek's](https://github.com/jasoneczek/fementor-meet-landing-page/blob/main/assets/css/style.css) solution to this challenge helped me understand implementing 'vw' and '::before' to successfully achieve my desired results.
